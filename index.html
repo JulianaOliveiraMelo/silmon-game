@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Jeu du Simon</title>
+</head>
+<body>
+    <div id="app" class="container">
+        <hr />
+        <button type="button" class="btn btn-success" @click="newGame">Nouvelle Partie</button>
+        <span>Score : {{ score }}</span>
+        <hr />
+        <div class="box">
+            <div>
+                <span class="carre" :class="{bleu: squares.first}" @click="playerChoise('first')"></span>
+                <span class="carre" :class="{rouge: squares.second}" @click="playerChoise('second')"></span>
+            </div>
+            <div>
+                <span class="carre" :class="{vert: squares.third}" @click="playerChoise('third')"></span>
+                <span class="carre" :class="{jaune: squares.fourth}" @click="playerChoise('fourth')"></span>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
