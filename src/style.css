@@ -13,17 +13,6 @@
   margin: 0 auto;
 }
 
-.round {
-    display: grid;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-    background-color: greenyellow;
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-}
-
 .bleu {
   background-color:blue;
 }
